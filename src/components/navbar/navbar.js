@@ -9,7 +9,7 @@ import {
   
 } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
+import { faUserGear } from "@fortawesome/free-solid-svg-icons";
 
 import "./navbar.css";
 
@@ -33,7 +33,7 @@ export default class menu extends React.Component {
             <DropdownButton id="dropdown-basic-button" title="Usuario" variant="warning">
               <Dropdown.Header id="dropdown-header">
                 <Row>
-                <FontAwesomeIcon icon={faUserCircle} />
+                <FontAwesomeIcon icon={faUserGear} />
                 </Row>
                 <Row>
                   #USUARIO#
