@@ -27,8 +27,14 @@ export default class menu extends React.Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              {/*<Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>*/}
+            <Nav.Link href="/index">Inicio</Nav.Link>
+              <Nav.Link href="/about">Historia</Nav.Link>
+              <Nav.Link href="/services">Servicios</Nav.Link>
+              <Nav.Link href="/store">Visitanos</Nav.Link>
+              <Nav.Link href="/contact">Contacto</Nav.Link>
+              <Nav.Link href="/blog">Blog</Nav.Link>
+              <Nav.Link href="/empleados">Empleados</Nav.Link>
+              <Nav.Link href="/articulos">Articulos</Nav.Link>
             </Nav>
             <DropdownButton id="dropdown-basic-button" title="Usuario" variant="warning">
               <Dropdown.Header id="dropdown-header">

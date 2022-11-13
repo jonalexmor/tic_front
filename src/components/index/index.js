@@ -1,14 +1,33 @@
 import React from 'react';
+ 
+import Slider from './slider/Slider';
+import Servicios from './servicios/Servicios';
 
-export default class Inicio extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state={};
-    }
-    state = {  }
-    render() { 
-        return ( 
-            <h1 style={{marginTop:200}}>Página de Inicio</h1>
-         );
-    }
+class Inicio extends React.Component {
+ 
+	render() {
+ 
+		return(
+ 
+			<> 
+			<main role="main" className="flex-shrink-0 mt-5">
+ 
+		            <div className="container">
+		  	  		
+		  	        <Slider /> 
+		  	        <Servicios />
+ 
+		  	        <hr className="featurette-divider" />
+ 
+		            </div>
+ 
+	  		</main>
+	  		</>
+ 
+		)
+ 
+	}
+ 
 }
+ 
+export default Inicio;

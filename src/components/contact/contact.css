@@ -1,0 +1,17 @@
+#contact-container {
+    margin-top: 10%;
+}
+#contact-container h2,
+#contact-container button,
+#contact-container form
+ {
+    width: 100%;
+}
+#contact-container button
+ {
+    margin-top: 30px;
+}
+#contact-container .Form-Label
+ {
+    float: left;
+}

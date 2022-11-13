@@ -1,7 +1,7 @@
 import React from "react";
 import { request } from "../helper/helper";
 import { Container, Row } from "react-bootstrap";
-import "./empleados.css";
+import "./articulos.css";
 import BootstrapTable from "react-bootstrap-table-next";
 import paginationFactory, {
   PaginationProvider,
@@ -16,41 +16,76 @@ const { SearchBar } = Search;
 const products = [
   {
     id: 1,
-    name: "Juan",
-    area: "BackEnd",
+    name: "Teclado Gamer",
+    price: 150000,
   },
   {
     id: 2,
-    name: "Diana",
-    area: "QA Master",
+    name: "Teclado USB",
+    price: 30000,
   },
   {
     id: 3,
-    name: "Luis",
-    area: "Administrador",
+    name: "Teclado Inhalambrico",
+    price: 45000,
   },
   {
     id: 4,
-    name: "Jonathan",
-    area: "FrontEnd",
+    name: "Portatil Gamer Asus",
+    price: 35000000,
+  },
+  {
+    id: 5,
+    name: "Portatil Toshiba",
+    price: 2450000,
+  },
+  {
+    id: 6,
+    name: "Portatil Slim Lenovo",
+    price: 2800000,
+  },
+  {
+    id: 7,
+    name: "Proyector Samsung",
+    price: 1900000,
+  },
+  {
+    id: 8,
+    name: "Proyector Reviv",
+    price: 2450000,
+  },
+  {
+    id: 9,
+    name: "Pantalla 19 pulgadas",
+    price: 780000,
+  },
+  {
+    id: 10,
+    name: "Pantalla 32 pulgadas",
+    price: 1750000,
+  },
+  {
+    id: 11,
+    name: "Licencia Office 365",
+    price: 280000,
   },
 ];
 const columns = [
   {
     dataField: "id",
-    text: "ID Empleado",
+    text: "Product ID",
   },
   {
     dataField: "name",
-    text: "Nombre Empleado",
+    text: "Product Name",
   },
   {
-    dataField: "area",
-    text: "Area Compañia",
+    dataField: "price",
+    text: "Product Price",
   },
 ];
 
-export default class EmpleadosBuscar extends React.Component {
+export default class ArticulosBuscar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -71,9 +106,9 @@ export default class EmpleadosBuscar extends React.Component {
       totalSize: products.length,
     };
     return (
-      <Container id="empleado-buscar-container">
+      <Container id="articulo-buscar-container">
         <Row>
-          <h1>Buscar Empleados</h1>
+          <h1>Buscar Articulos</h1>
         </Row>
         <Row>
           <ToolkitProvider
