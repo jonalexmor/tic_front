@@ -1,58 +1,67 @@
 import React from "react";
 
 class Detalles extends React.Component {
-  render() {
-    return (
-      <div className="container">
-        <div className="row">
-          <div className="col-md-4">
-            <h2>Objetivo</h2>
-            <p>
-              Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-              tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-              fermentum massa justo sit amet risus. Etiam porta sem malesuada
-              magna mollis euismod. Donec sed odio dui.{" "}
-            </p>
-            <p>
-              <a className="btn btn-secondary" href="/index" role="button">
-                Leer más &raquo;
-              </a>
-            </p>
-          </div>
-          <div className="col-md-4">
-            <h2>Misión</h2>
-            <p>
-              Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-              tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-              fermentum massa justo sit amet risus. Etiam porta sem malesuada
-              magna mollis euismod. Donec sed odio dui.{" "}
-            </p>
-            <p>
-              <a className="btn btn-secondary" href="/index" role="button">
-                Leer más &raquo;
-              </a>
-            </p>
-          </div>
-          <div className="col-md-4">
-            <h2>Visión</h2>
-            <p>
-              Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
-              egestas eget quam. Vestibulum id ligula porta felis euismod
-              semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-              condimentum nibh, ut fermentum massa justo.
-            </p>
-            <p>
-              <a className="btn btn-secondary" href="/index" role="button">
-                Leer más &raquo;
-              </a>
-            </p>
-          </div>
-        </div>
+    render() {
+        return (
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-4">
+                        <h2>Objetivo</h2>
+                        <p>
+                            Brindar el mejor servicio en la venta y alquiler de
+                            equipos computo y software a los mejores precios. .{" "}
+                        </p>
+                        <p>
+                            <a
+                                className="btn btn-secondary"
+                                href="/index"
+                                role="button"
+                            >
+                                Leer más &raquo;
+                            </a>
+                        </p>
+                    </div>
+                    <div className="col-md-4">
+                        <h2>Misión</h2>
+                        <p>
+                            Ofrecer soluciones adecuadas a las necesidades del
+                            cliente . nos enfocamos en entregar un servicio
+                            cercano, profesional y dispuesto a acompañarlos en
+                            resolución de sus requerimientos.{" "}
+                        </p>
+                        <p>
+                            <a
+                                className="btn btn-secondary"
+                                href="/index"
+                                role="button"
+                            >
+                                Leer más &raquo;
+                            </a>
+                        </p>
+                    </div>
+                    <div className="col-md-4">
+                        <h2>Visión</h2>
+                        <p>
+                            Ser reconocidos como una empresa con servicios de
+                            calidad y con un alto nivel de satisfacción de sus
+                            clientes
+                        </p>
+                        <p>
+                            <a
+                                className="btn btn-secondary"
+                                href="/index"
+                                role="button"
+                            >
+                                Leer más &raquo;
+                            </a>
+                        </p>
+                    </div>
+                </div>
 
-        <hr />
-      </div>
-    );
-  }
+                <hr />
+            </div>
+        );
+    }
 }
 
 export default Detalles;
