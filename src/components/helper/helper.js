@@ -35,4 +35,12 @@ export const request = {
       },
     });
   },
+  post: function (services, data) {
+    let token = renovarSesion();
+    return axios.post(`${APIHOST}${services}`, data, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+  },
 };
