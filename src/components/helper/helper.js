@@ -3,6 +3,7 @@ import axios from "axios";
 import Cookies from "universal-cookie/es6";
 import app from "../../app.json";
 
+
 const cookies = new Cookies();
 const { APIHOST } = app;
 
@@ -43,4 +44,21 @@ export const request = {
       },
     });
   },
+  put: function (services, data) {
+    let token = renovarSesion();
+    return axios.put(`${APIHOST}${services}`, data, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+  },
+  delete: function (services) {
+    let token = renovarSesion();
+    return axios.delete(`${APIHOST}${services}`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+  },
 };
+
