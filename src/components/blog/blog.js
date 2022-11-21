@@ -1,4 +1,8 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
+import Slider from "./Slider";
+import "./blog.css"
+
 
 export default class Blog extends React.Component {
     constructor(props) {
@@ -6,7 +10,15 @@ export default class Blog extends React.Component {
         this.state ={}
     }
     render() { 
-        return ( <h1 style={{marginTop:100}}>Blog</h1> );
+        return ( 
+          <Container id="blog-container">
+            <h1>Blog al día</h1>
+        <Slider/>
+        </Container>
+
+        
+        
+        );
     }
 }
  
